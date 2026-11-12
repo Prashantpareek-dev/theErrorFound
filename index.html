@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Error Found — Meta Ads Agency | Book a Free Audit Call</title>
+<meta name="description" content="Meta ads specialists. We run only Facebook & Instagram ads and scale brands with real, measurable results. Book a free audit call." />
+<link rel="icon" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Manrope', 'system-ui', 'sans-serif'], display: ['Sora', 'system-ui', 'sans-serif'] },
+        colors: {
+          bg: 'var(--background)', ink: 'var(--foreground)', muted: 'var(--muted-foreground)',
+          primary: 'var(--primary)', deep: 'var(--brand-deep)', glow: 'var(--brand-glow)',
+          line: 'var(--border)', soft: 'var(--accent)', ok: 'var(--ok)', bad: 'var(--bad)', meta: 'var(--meta)'
+        },
+        transitionTimingFunction: { out: 'cubic-bezier(0.23, 1, 0.32, 1)' }
+      }
+    }
+  }
+</script>
+<style>
+  /* Brand tokens, taken from the original site */
+  :root {
+    --background: oklch(99.3% .004 300);
+    --foreground: oklch(21% .11 287);
+    --muted-foreground: oklch(48% .04 287);
+    --primary: oklch(50% .24 287);
+    --brand-deep: oklch(22% .15 287);
+    --brand-glow: oklch(64% .22 295);
+    --border: oklch(91% .02 295);
+    --accent: oklch(94% .035 295);
+    --meta: oklch(57% .2 258);
+    --ok: oklch(58% .15 155);
+    --bad: oklch(60% .22 25);
+    --gradient-brand: linear-gradient(135deg, var(--brand-deep) 0%, var(--primary) 60%, var(--brand-glow) 100%);
+    --gradient-text: linear-gradient(100deg, var(--primary), var(--brand-glow));
+  }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  body { background: var(--background); color: var(--foreground); }
+  .text-grad { background: var(--gradient-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .bg-brand { background: var(--gradient-brand); }
+  .grid-bg {
+    background-image: linear-gradient(to right, rgb(255 255 255 / .06) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgb(255 255 255 / .06) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(70% 60% at 50% 30%, #000 40%, transparent 100%);
+  }
+  .btn { transition: transform 160ms cubic-bezier(0.23,1,0.32,1), box-shadow 200ms ease; }
+  .btn:active { transform: scale(0.97); }
+  @media (hover: hover) and (pointer: fine) {
+    .btn:hover { box-shadow: 0 18px 40px -14px var(--primary); }
+    .lift { transition: transform 300ms cubic-bezier(0.23,1,0.32,1); }
+    .lift:hover { transform: translateY(-4px); }
+  }
+  .marquee { animation: marquee 32s linear infinite; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  .strike { position: relative; white-space: nowrap; }
+  .strike::after {
+    content: ""; position: absolute; left: -2%; right: -2%; top: 55%; height: .09em;
+    background: var(--bad); border-radius: 99px; transform: scaleX(var(--s, 0)); transform-origin: left;
+  }
+  .tab[aria-selected="true"] { background: white; color: var(--brand-deep); }
+  .num { font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid var(--brand-glow); outline-offset: 3px; border-radius: 8px; }
+  @media (prefers-reduced-motion: reduce) { .marquee { animation: none; } }
+</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+<!-- NAV -->
+<header id="top" class="fixed inset-x-0 top-0 z-50 px-4">
+  <nav id="nav" class="mx-auto mt-3 flex max-w-6xl items-center justify-between rounded-2xl px-4 py-2.5 transition-[background-color,box-shadow] duration-300 sm:px-5">
+    <a href="#top" class="flex items-center gap-2.5" aria-label="The Error Found home">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-white p-1 shadow-sm"><img src="assets/logo.png" alt="The Error Found logo" class="h-full w-full object-contain" /></span>
+      <span class="font-display text-[15px] font-bold tracking-wide nav-ink text-white">THE ERROR FOUND</span>
+    </a>
+    <div class="hidden items-center gap-7 text-sm font-semibold md:flex nav-ink text-white/80">
+      <a href="#about" class="hover:opacity-100 transition-opacity">About</a>
+      <a href="#results" class="hover:opacity-100 transition-opacity">Results</a>
+      <a href="#testimonials" class="hover:opacity-100 transition-opacity">Testimonials</a>
+      <a href="#team" class="hover:opacity-100 transition-opacity">Team</a>
+    </div>
+    <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-deep nav-cta">
+      <span class="hidden sm:inline">Book a Free Audit Call</span><span class="sm:hidden">Free Audit</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="relative isolate overflow-hidden bg-deep pb-24 pt-32 text-white sm:pt-40">
+  <div class="grid-bg absolute inset-0 -z-10"></div>
+  <div class="absolute left-1/2 top-[-20%] -z-10 h-[620px] w-[900px] -translate-x-1/2 rounded-full opacity-60 blur-3xl" style="background: radial-gradient(closest-side, var(--brand-glow), transparent)"></div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_.9fr]">
+    <div>
+      <p class="hero-in mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[.16em] text-white/80">
+        <span class="h-1.5 w-1.5 rounded-full bg-glow"></span> Meta ads only. Nothing else.
+      </p>
+      <h1 id="heroTitle" class="font-display text-[clamp(2.4rem,6vw,4.6rem)] font-extrabold leading-[1.02] tracking-tight">
+        We find the <span class="strike" id="strike">errors</span> in your ads and turn them into <span class="text-grad" style="--brand-glow: oklch(80% .14 295); --primary: oklch(72% .18 290)">profit.</span>
+      </h1>
+      <p class="hero-in mt-6 max-w-xl text-lg leading-relaxed text-white/70">
+        A performance agency that runs only Facebook &amp; Instagram ads. More sales, lower cost per result, and numbers you can check in your own Ads Manager.
+      </p>
+      <div class="hero-in mt-9 flex flex-wrap items-center gap-4">
+        <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-4 font-bold text-deep">
+          Book a Free Audit Call
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="text-sm text-white/60">30-minute call · No cost · Clear action plan</p>
+      </div>
+    </div>
+
+    <!-- Audit scanner card -->
+    <div class="hero-in relative" aria-label="Example ad account audit">
+      <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.06] p-5 backdrop-blur-xl shadow-2xl">
+        <div class="mb-4 flex items-center justify-between text-xs text-white/60">
+          <span class="flex items-center gap-2 font-semibold"><span class="h-2 w-2 rounded-full bg-meta"></span> Ads Manager · Audit</span>
+          <span id="scanState" class="rounded-full bg-white/10 px-2.5 py-1 font-semibold">Scanning…</span>
+        </div>
+        <ul class="space-y-2.5" id="scanRows">
+          <li class="scan-row flex items-center justify-between rounded-2xl bg-white/[.06] px-4 py-3.5">
+            <div><p class="text-sm font-bold">Pixel &amp; CAPI</p><p class="text-xs text-white/50">Purchase event</p></div>
+            <span class="pill rounded-full px-2.5 py-1 text-xs font-bold" data-bad="Firing twice" data-ok="Fixed"></span>
+          </li>
+          <li class="scan-row flex items-center justify-between rounded-2xl bg-white/[.06] px-4 py-3.5">
+            <div><p class="text-sm font-bold">Creative fatigue</p><p class="text-xs text-white/50">Frequency 6.8 · CTR down 41%</p></div>
+            <span class="pill rounded-full px-2.5 py-1 text-xs font-bold" data-bad="Tired creative" data-ok="New hooks live"></span>
+          </li>
+          <li class="scan-row flex items-center justify-between rounded-2xl bg-white/[.06] px-4 py-3.5">
+            <div><p class="text-sm font-bold">Budget split</p><p class="text-xs text-white/50">1 campaign eating 58%</p></div>
+            <span class="pill rounded-full px-2.5 py-1 text-xs font-bold" data-bad="Budget leak" data-ok="Rebalanced"></span>
+          </li>
+        </ul>
+        <div class="mt-4 grid grid-cols-2 gap-2.5">
+          <div class="rounded-2xl bg-white/[.06] px-4 py-3"><p class="text-xs text-white/50">Purchase ROAS</p><p class="num font-display text-2xl font-bold"><span id="roas">1.90</span>x</p></div>
+          <div class="rounded-2xl bg-white/[.06] px-4 py-3"><p class="text-xs text-white/50">Cost per purchase</p><p class="num font-display text-2xl font-bold">₹<span id="cpp">529</span></p></div>
+        </div>
+        <div id="scanline" class="pointer-events-none absolute inset-x-0 top-0 h-24 opacity-0" style="background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--brand-glow) 35%, transparent), transparent)"><div class="absolute bottom-1/2 h-px w-full bg-glow"></div></div>
+      </div>
+      <div class="absolute -bottom-14 right-6 hidden rotate-[3deg] rounded-2xl bg-white px-4 py-3 text-deep shadow-xl sm:block float">
+        <p class="text-xs font-semibold text-muted">Errors found</p><p class="font-display text-xl font-extrabold">3 → 0</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VSL -->
+  <div class="mx-auto mt-24 max-w-5xl px-4 sm:px-6">
+    <a href="https://calendly.com/" target="_blank" rel="noopener" class="vsl group relative block overflow-hidden rounded-3xl border border-white/10 shadow-2xl" aria-label="Watch: How we scale brands profitably with Meta ads, 12 minutes 47 seconds">
+      <img src="assets/vsl.jpg" alt="Ashok Kumar explaining Meta ads strategy at his desk" class="vsl-img aspect-video w-full object-cover" width="1600" height="912" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/10 to-transparent"></div>
+      <span class="absolute left-1/2 top-1/2 grid h-20 w-20 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-primary shadow-xl transition-transform duration-300 ease-out group-hover:scale-110 group-active:scale-95">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+      <div class="absolute bottom-0 left-0 right-0 flex items-end justify-between p-5 sm:p-7">
+        <div><p class="text-xs font-semibold uppercase tracking-[.16em] text-white/60">Watch before your call</p><p class="mt-1 font-display text-lg font-bold sm:text-2xl">How we scale brands profitably with Meta ads</p></div>
+        <span class="num rounded-lg bg-black/50 px-2 py-1 text-xs font-bold">12:47</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="relative border-b border-line bg-white">
+  <div class="mx-auto grid max-w-6xl grid-cols-2 divide-line px-4 sm:px-6 lg:grid-cols-4 lg:divide-x">
+    <div class="stat px-4 py-10 text-center"><p class="num font-display text-4xl font-extrabold sm:text-5xl"><span data-count="4.2" data-dec="1" data-pre="₹" data-suf="Cr+">₹0Cr+</span></p><p class="mt-2 text-sm font-semibold text-muted">Ad spend managed</p></div>
+    <div class="stat px-4 py-10 text-center"><p class="num font-display text-4xl font-extrabold sm:text-5xl text-grad"><span data-count="5.4" data-dec="1" data-suf="x">0x</span></p><p class="mt-2 text-sm font-semibold text-muted">Average ROAS</p></div>
+    <div class="stat px-4 py-10 text-center"><p class="num font-display text-4xl font-extrabold sm:text-5xl"><span data-count="60" data-suf="+">0+</span></p><p class="mt-2 text-sm font-semibold text-muted">Brands scaled</p></div>
+    <div class="stat px-4 py-10 text-center"><p class="num font-display text-4xl font-extrabold sm:text-5xl"><span data-count="18" data-pre="₹" data-suf="Cr+">₹0Cr+</span></p><p class="mt-2 text-sm font-semibold text-muted">Revenue generated</p></div>
+  </div>
+  <div class="overflow-hidden border-t border-line bg-soft py-4" aria-hidden="true">
+    <div class="marquee flex w-max gap-10 whitespace-nowrap font-display text-sm font-bold uppercase tracking-[.14em] text-primary">
+      <span>Broken pixel</span><span>✕</span><span>Tired creative</span><span>✕</span><span>Budget leak</span><span>✕</span><span>Wrong audience</span><span>✕</span><span>Weak offer</span><span>✕</span><span>Leaky funnel</span><span>✕</span>
+      <span>Broken pixel</span><span>✕</span><span>Tired creative</span><span>✕</span><span>Budget leak</span><span>✕</span><span>Wrong audience</span><span>✕</span><span>Weak offer</span><span>✕</span><span>Leaky funnel</span><span>✕</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="mx-auto max-w-6xl px-4 py-28 sm:px-6">
+  <div class="grid gap-14 lg:grid-cols-2">
+    <div class="lg:sticky lg:top-28 lg:self-start">
+      <p class="reveal text-xs font-bold uppercase tracking-[.18em] text-primary">About us</p>
+      <h2 class="reveal mt-4 font-display text-[clamp(2rem,4.4vw,3.2rem)] font-extrabold leading-[1.05] tracking-tight">From one desk to a team that only does Meta ads</h2>
+      <div class="reveal mt-6 space-y-4 text-lg leading-relaxed text-muted">
+        <p>The Error Found started at a single desk with one client's ad account and a simple habit: open Ads Manager, find what is broken, and fix it before spending another rupee.</p>
+        <p>We kept watching brands pay for impressions that never became orders. So we dropped SEO, websites and every other ad platform, and kept only Meta ads.</p>
+        <p>That desk is now a small team of specialists. The habit hasn't changed. We audit first, show you the numbers in your own account, and only scale what already makes money.</p>
+      </div>
+    </div>
+
+    <div>
+      <ol class="relative space-y-6 pl-10" id="timeline">
+        <span class="absolute left-[11px] top-2 bottom-2 w-0.5 bg-line" aria-hidden="true"></span>
+        <span id="tlFill" class="absolute left-[11px] top-2 bottom-2 w-0.5 origin-top scale-y-0 bg-primary" aria-hidden="true"></span>
+        <li class="tl relative rounded-3xl border border-line bg-white p-6 shadow-[0_20px_50px_-24px_rgb(40_20_90/.25)]">
+          <span class="absolute -left-[38px] top-7 h-4 w-4 rounded-full border-4 border-bg bg-primary"></span>
+          <p class="font-display text-3xl font-extrabold text-grad">2021</p><p class="mt-1 font-semibold">One client, one ad account, one desk.</p>
+        </li>
+        <li class="tl relative rounded-3xl border border-line bg-white p-6 shadow-[0_20px_50px_-24px_rgb(40_20_90/.25)]">
+          <span class="absolute -left-[38px] top-7 h-4 w-4 rounded-full border-4 border-bg bg-primary"></span>
+          <p class="font-display text-3xl font-extrabold text-grad">2023</p><p class="mt-1 font-semibold">Dropped every other service. Meta ads only.</p>
+        </li>
+        <li class="tl relative rounded-3xl border border-line bg-white p-6 shadow-[0_20px_50px_-24px_rgb(40_20_90/.25)]">
+          <span class="absolute -left-[38px] top-7 h-4 w-4 rounded-full border-4 border-bg bg-primary"></span>
+          <p class="font-display text-3xl font-extrabold text-grad">2026</p><p class="mt-1 font-semibold">60+ brands scaled, still auditing first.</p>
+        </li>
+      </ol>
+
+      <figure class="reveal mt-10 rounded-3xl bg-brand p-8 text-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" class="opacity-40" aria-hidden="true"><path d="M7 7h4v4H8c0 2 1 3 3 3v3c-4 0-6-2-6-6V7zm9 0h4v4h-3c0 2 1 3 3 3v3c-4 0-6-2-6-6V7z"/></svg>
+        <blockquote class="mt-3 text-lg font-medium leading-relaxed">We named ourselves after the thing we look for first. Every account has errors hiding in it: a broken pixel, a tired creative, a campaign eating the budget. Find them, and the profit is usually already there.</blockquote>
+        <figcaption class="mt-6 flex items-center gap-3">
+          <img src="assets/team-1.jpg" alt="" class="h-11 w-11 rounded-full object-cover ring-2 ring-white/30" loading="lazy" />
+          <div><p class="font-bold">Ashok Kumar</p><p class="text-sm text-white/70">Founder, The Error Found</p></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="bg-deep py-28 text-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <p class="reveal text-xs font-bold uppercase tracking-[.18em] text-glow">Real results</p>
+        <h2 class="reveal mt-4 font-display text-[clamp(2rem,4.4vw,3.2rem)] font-extrabold leading-[1.05] tracking-tight">Straight from Ads Manager</h2>
+        <p class="reveal mt-4 max-w-lg text-lg text-white/65">No vanity metrics. These are the campaign dashboards our clients see every day.</p>
+      </div>
+      <div class="reveal flex flex-wrap gap-2 rounded-2xl bg-white/5 p-1.5" role="tablist" aria-label="Case studies" id="tabs"></div>
+    </div>
+
+    <div id="case" class="reveal mt-10 overflow-hidden rounded-3xl bg-white text-ink shadow-2xl" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="mx-auto max-w-6xl px-4 py-28 sm:px-6">
+  <div class="text-center">
+    <p class="reveal text-xs font-bold uppercase tracking-[.18em] text-primary">Client stories</p>
+    <h2 class="reveal mt-4 font-display text-[clamp(2rem,4.4vw,3.2rem)] font-extrabold tracking-tight">Hear it from our clients</h2>
+    <p class="reveal mx-auto mt-4 max-w-md text-lg text-muted">Real founders, on camera, talking about real numbers.</p>
+  </div>
+  <div class="mt-14 grid gap-6 md:grid-cols-3">
+    <article class="t-card lift group relative overflow-hidden rounded-3xl">
+      <img src="assets/testimonial-1.jpg" alt="Priya Sharma, founder of an ethnic-wear label" class="aspect-[3/4] w-full object-cover" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/30 to-transparent"></div>
+      <span class="absolute left-5 top-5 rounded-full bg-white px-3 py-1.5 font-display text-sm font-extrabold text-primary">6.2x ROAS</span>
+      <span class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-white/20 text-white backdrop-blur" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      <div class="absolute bottom-0 p-6 text-white">
+        <p class="text-lg font-semibold leading-snug">“We tripled our monthly sales without our cost per order going up.”</p>
+        <p class="mt-4 font-bold">Priya Sharma</p><p class="text-sm text-white/70">Founder, ethnic-wear label</p>
+      </div>
+    </article>
+    <article class="t-card lift group relative overflow-hidden rounded-3xl md:mt-10">
+      <img src="assets/testimonial-2.jpg" alt="Rajesh Mehta, director of a real estate group" class="aspect-[3/4] w-full object-cover" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/30 to-transparent"></div>
+      <span class="absolute left-5 top-5 rounded-full bg-white px-3 py-1.5 font-display text-sm font-extrabold text-primary">₹142 per lead</span>
+      <span class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-white/20 text-white backdrop-blur" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      <div class="absolute bottom-0 p-6 text-white">
+        <p class="text-lg font-semibold leading-snug">“For the first time our sales team is drowning in good leads.”</p>
+        <p class="mt-4 font-bold">Rajesh Mehta</p><p class="text-sm text-white/70">Director, real estate group</p>
+      </div>
+    </article>
+    <article class="t-card lift group relative overflow-hidden rounded-3xl">
+      <img src="assets/testimonial-3.jpg" alt="Arjun Nair, founder of an online fitness coaching brand" class="aspect-[3/4] w-full object-cover" loading="lazy" />
+      <div class="absolute inset-0 bg-gradient-to-t from-deep via-deep/30 to-transparent"></div>
+      <span class="absolute left-5 top-5 rounded-full bg-white px-3 py-1.5 font-display text-sm font-extrabold text-primary">₹38L in 30 days</span>
+      <span class="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-white/20 text-white backdrop-blur" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      <div class="absolute bottom-0 p-6 text-white">
+        <p class="text-lg font-semibold leading-snug">“They fixed the funnel errors nobody else could find.”</p>
+        <p class="mt-4 font-bold">Arjun Nair</p><p class="text-sm text-white/70">Founder, online fitness coaching</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="border-t border-line bg-white py-28">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="max-w-2xl">
+      <p class="reveal text-xs font-bold uppercase tracking-[.18em] text-primary">The team</p>
+      <h2 class="reveal mt-4 font-display text-[clamp(2rem,4.4vw,3.2rem)] font-extrabold tracking-tight">Specialists, not generalists</h2>
+      <p class="reveal mt-4 text-lg text-muted">Everyone on your account works on Meta ads, all day, every day.</p>
+    </div>
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="m-card lift rounded-3xl border border-line bg-bg p-3">
+        <img src="assets/team-1.jpg" alt="Ashok Kumar" class="aspect-square w-full rounded-2xl object-cover" loading="lazy" />
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-3"><div><h3 class="font-display text-xl font-bold">Ashok Kumar</h3><p class="text-sm font-semibold text-muted">Founder &amp; Head of Strategy</p></div><span class="shrink-0 rounded-full bg-soft px-2.5 py-1 text-xs font-bold text-primary">7+ yrs on Meta ads</span></div>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold"><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Scaling strategy</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Funnel audits</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Offer building</li></ul>
+        </div>
+      </article>
+      <article class="m-card lift rounded-3xl border border-line bg-bg p-3">
+        <img src="assets/team-2.jpg" alt="Neha Iyer" class="aspect-square w-full rounded-2xl object-cover" loading="lazy" />
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-3"><div><h3 class="font-display text-xl font-bold">Neha Iyer</h3><p class="text-sm font-semibold text-muted">Creative Strategist</p></div><span class="shrink-0 rounded-full bg-soft px-2.5 py-1 text-xs font-bold text-primary">500+ ads launched</span></div>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold"><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">UGC &amp; hooks</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Static creatives</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Ad copy</li></ul>
+        </div>
+      </article>
+      <article class="m-card lift rounded-3xl border border-line bg-bg p-3">
+        <img src="assets/team-3.jpg" alt="Rohan Das" class="aspect-square w-full rounded-2xl object-cover" loading="lazy" />
+        <div class="p-4">
+          <div class="flex items-start justify-between gap-3"><div><h3 class="font-display text-xl font-bold">Rohan Das</h3><p class="text-sm font-semibold text-muted">Senior Media Buyer</p></div><span class="shrink-0 rounded-full bg-soft px-2.5 py-1 text-xs font-bold text-primary">₹2Cr+ spend managed</span></div>
+          <ul class="mt-4 flex flex-wrap gap-2 text-xs font-semibold"><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Advantage+ campaigns</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Pixel &amp; CAPI tracking</li><li class="rounded-lg border border-line bg-white px-2.5 py-1.5">Daily optimisation</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="px-4 py-24 sm:px-6">
+  <div id="cta" class="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-brand px-6 py-16 text-white sm:px-14 sm:py-20">
+    <div class="grid-bg absolute inset-0"></div>
+    <div class="relative grid items-center gap-12 lg:grid-cols-[1.2fr_.8fr]">
+      <div>
+        <h2 class="font-display text-[clamp(2rem,4.6vw,3.4rem)] font-extrabold leading-[1.05] tracking-tight">Let's find the errors in your Meta ads.</h2>
+        <p class="mt-5 max-w-lg text-lg text-white/75">Free 30-minute audit call. If we can't find a way to improve your results, we'll tell you.</p>
+        <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn mt-9 inline-flex items-center gap-2 rounded-2xl bg-white px-6 py-4 font-bold text-deep">
+          Book a Free Audit Call
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <ul class="space-y-3">
+        <li class="cta-item flex items-start gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-white text-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="font-semibold">We review your ad account, pixel and creatives</span></li>
+        <li class="cta-item flex items-start gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-white text-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="font-semibold">You get the top 3 errors costing you money</span></li>
+        <li class="cta-item flex items-start gap-3 rounded-2xl bg-white/10 p-4 backdrop-blur"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-white text-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="font-semibold">A clear 90-day plan to scale profitably</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-line">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-10 text-sm text-muted sm:flex-row sm:px-6">
+    <a href="#top" class="flex items-center gap-2.5 text-ink"><img src="assets/logo.png" alt="The Error Found logo" class="h-8 w-auto mix-blend-multiply" /><span class="font-display font-bold tracking-wide">THE ERROR FOUND</span></a>
+    <a href="mailto:team@theerrorfound.com" class="font-semibold hover:text-primary transition-colors">team@theerrorfound.com</a>
+    <p>© 2026 The Error Found. Meta ads specialists.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+// ---------- Case study data (from the original site) ----------
+const cases = [
+  { tab: 'Fashion D2C', tag: 'Fashion D2C brand · E-commerce', title: '6.2x ROAS while scaling spend 3x', range: 'Last 90 days',
+    kpis: [['Amount spent','₹18,42,300','+212%'],['Purchases','4,918','+268%'],['Purchase ROAS','6.21','+41%'],['Cost per purchase','₹374.60','−38%']],
+    cols: ['Campaign','Status','Spent','Purchases','Cost / purchase','ROAS'],
+    rows: [['TOF | Broad | Advantage+ Shopping','Active','₹8,10,400','2,316','₹349.90','6.84'],['MOF | Video Viewers 50% | Catalog','Active','₹5,22,700','1,402','₹372.80','5.97'],['BOF | ATC 14D | DPA Retargeting','Active','₹3,08,900','932','₹331.40','7.12'],['Testing | UGC Hooks v7','Learning','₹2,00,300','268','₹747.40','3.18']] },
+  { tab: 'Real estate', tag: 'Real estate developer · Lead generation', title: '1,870 qualified leads at ₹142 each', range: 'Last 60 days',
+    kpis: [['Amount spent','₹2,65,540','+64%'],['Leads','1,870','+190%'],['Cost per lead','₹142.00','−57%'],['Site visits booked','214','+3.4x']],
+    cols: ['Campaign','Status','Spent','Leads','Cost / lead'],
+    rows: [['Instant Form | 2 & 3 BHK | 25km','Active','₹1,24,100','962','₹129.00'],['Lookalike 1% | Site Visitors','Active','₹78,240','512','₹152.80'],['Retargeting | Brochure Openers','Active','₹41,800','287','₹145.60'],['Testing | Walkthrough Reels','Learning','₹21,400','109','₹196.30']] },
+  { tab: 'Fitness coaching', tag: 'Fitness coaching brand · Info & coaching', title: '₹38L in sales from ₹6.9L spend', range: 'Last 30 days',
+    kpis: [['Amount spent','₹6,92,000','+120%'],['Webinar sign-ups','11,284','+176%'],['Purchase ROAS','5.49','+62%'],['Cost per sign-up','₹61.30','−44%']],
+    cols: ['Campaign','Status','Spent','Sign-ups','Cost / sign-up','ROAS'],
+    rows: [['Webinar | Broad 25-45 | Reels','Active','₹3,40,000','5,920','₹57.40','5.86'],['Webinar | Interest Stack | Feed','Active','₹2,12,000','3,301','₹64.20','5.12'],['Retargeting | Attended, no buy','Active','₹96,000','1,610','₹59.60','6.40'],['Testing | Founder Story VSL','Learning','₹44,000','453','₹97.10','2.90']] },
+  { tab: 'Skincare', tag: 'Skincare brand · E-commerce', title: 'From 1.9x to 4.8x ROAS in one quarter', range: 'Last 90 days',
+    kpis: [['Amount spent','₹9,74,800','+88%'],['Purchases','3,612','+215%'],['Purchase ROAS','4.83','+154%'],['Cost per purchase','₹269.90','−49%']],
+    cols: ['Campaign','Status','Spent','Purchases','Cost / purchase','ROAS'],
+    rows: [['ASC+ | All Products | Creators','Active','₹4,60,300','1,820','₹252.90','5.21'],['TOF | Broad | Before-After','Active','₹2,88,100','1,004','₹286.90','4.47'],['BOF | Viewed Product 7D','Active','₹1,48,200','602','₹246.20','5.03'],['Testing | Static Offers v3','Learning','₹78,200','186','₹420.40','2.71']] }
+];
+
+const tabs = document.getElementById('tabs'), panel = document.getElementById('case');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function renderCase(i) {
+  const c = cases[i];
+  [...tabs.children].forEach((b, j) => b.setAttribute('aria-selected', j === i));
+  panel.innerHTML = `
+    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-line bg-[oklch(97.5%_.004_260)] px-5 py-4 sm:px-7">
+      <div class="flex items-center gap-2 text-sm font-bold"><span class="h-2.5 w-2.5 rounded-full bg-meta"></span>Ads Manager <span class="font-semibold text-muted">· ${c.tag}</span></div>
+      <span class="rounded-lg border border-line bg-white px-2.5 py-1 text-xs font-semibold text-muted">${c.range}</span>
+    </div>
+    <div class="px-5 pt-7 sm:px-7"><h3 class="case-anim font-display text-2xl font-extrabold sm:text-3xl">${c.title}</h3></div>
+    <div class="grid grid-cols-2 gap-3 px-5 py-6 sm:px-7 lg:grid-cols-4">
+      ${c.kpis.map(([k, v, d]) => `<div class="case-anim rounded-2xl border border-line p-4"><p class="text-xs font-semibold text-muted">${k}</p><p class="num mt-1 font-display text-xl font-extrabold sm:text-2xl">${v}</p><p class="mt-1 text-xs font-bold text-ok">${d}</p></div>`).join('')}
+    </div>
+    <div class="overflow-x-auto px-5 pb-7 sm:px-7">
+      <table class="w-full min-w-[640px] text-left text-sm">
+        <thead><tr class="border-b border-line text-xs text-muted">${c.cols.map((h, j) => `<th class="py-3 pr-4 font-semibold ${j > 1 ? 'text-right' : ''}">${h}</th>`).join('')}</tr></thead>
+        <tbody>${c.rows.map(r => `<tr class="case-anim border-b border-line last:border-0">${r.map((v, j) => j === 1
+          ? `<td class="py-3.5 pr-4"><span class="inline-flex items-center gap-1.5 text-xs font-bold ${v === 'Active' ? 'text-ok' : 'text-meta'}"><span class="h-1.5 w-1.5 rounded-full bg-current"></span>${v}</span></td>`
+          : `<td class="num py-3.5 pr-4 ${j === 0 ? 'font-semibold' : 'text-right'}">${v}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table>
+    </div>`;
+  if (!reduce) gsap.from(panel.querySelectorAll('.case-anim'), { y: 14, opacity: 0, duration: .5, stagger: .04, ease: 'power3.out' });
+}
+cases.forEach((c, i) => {
+  const b = document.createElement('button');
+  b.className = 'tab btn rounded-xl px-4 py-2.5 text-sm font-bold text-white/70 transition-colors';
+  b.setAttribute('role', 'tab'); b.textContent = c.tab;
+  b.onclick = () => renderCase(i);
+  tabs.append(b);
+});
+tabs.addEventListener('keydown', e => {
+  const btns = [...tabs.children], i = btns.indexOf(document.activeElement);
+  if (i < 0 || !['ArrowRight', 'ArrowLeft'].includes(e.key)) return;
+  const n = (i + (e.key === 'ArrowRight' ? 1 : -1) + btns.length) % btns.length;
+  btns[n].focus(); renderCase(n);
+});
+
+// ---------- Hero scanner pills ----------
+const pills = [...document.querySelectorAll('.pill')];
+const setPill = (p, ok) => {
+  p.textContent = ok ? '✓ ' + p.dataset.ok : '● ' + p.dataset.bad;
+  p.style.background = ok ? 'color-mix(in oklab, var(--ok) 25%, transparent)' : 'color-mix(in oklab, var(--bad) 25%, transparent)';
+  p.style.color = ok ? 'oklch(85% .15 155)' : 'oklch(80% .14 25)';
+};
+pills.forEach(p => setPill(p, false));
+
+// ---------- Nav: turns solid after the hero ----------
+const nav = document.getElementById('nav');
+const navSolid = on => {
+  nav.classList.toggle('bg-white/85', on); nav.classList.toggle('backdrop-blur-xl', on); nav.classList.toggle('shadow-[0_10px_30px_-12px_rgb(40_20_90/.25)]', on);
+  nav.querySelectorAll('.nav-ink').forEach(el => { el.classList.toggle('text-white', !on); el.classList.toggle('text-white/80', !on); el.classList.toggle('text-ink', on); });
+  const cta = nav.querySelector('.nav-cta'); cta.classList.toggle('bg-white', !on); cta.classList.toggle('text-deep', !on); cta.classList.toggle('bg-primary', on); cta.classList.toggle('text-white', on);
+};
+
+gsap.registerPlugin(ScrollTrigger);
+renderCase(0);
+ScrollTrigger.create({ start: () => innerHeight * 0.8, onToggle: s => navSolid(s.isActive) });
+
+const fmt = (v, el) => (el.dataset.pre || '') + v.toFixed(+el.dataset.dec || 0) + (el.dataset.suf || '');
+
+if (reduce) {
+  document.getElementById('strike').style.setProperty('--s', 1);
+  pills.forEach(p => setPill(p, true));
+  document.querySelectorAll('[data-count]').forEach(el => el.textContent = fmt(+el.dataset.count, el));
+  document.getElementById('tlFill').style.transform = 'scaleY(1)';
+} else {
+  // Lenis smooth scroll, driven by GSAP's ticker
+  const lenis = new Lenis({ duration: 1.1, easing: t => 1 - Math.pow(1 - t, 4) });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(t => lenis.raf(t * 1000));
+  gsap.ticker.lagSmoothing(0);
+  document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href')); if (!t) return;
+    e.preventDefault(); lenis.scrollTo(t, { offset: -80 });
+  }));
+
+  // Hero headline: word-by-word rise
+  const h1 = document.getElementById('heroTitle');
+  h1.querySelectorAll(':scope > span').forEach(s => s.classList.add('inline-block'));
+  [...h1.childNodes].forEach(n => {
+    if (n.nodeType !== 3 || !n.textContent.trim()) return;
+    const frag = document.createDocumentFragment();
+    n.textContent.split(/(\s+)/).forEach(w => {
+      if (!w.trim()) return frag.append(w);
+      const s = document.createElement('span'); s.className = 'inline-block'; s.textContent = w; frag.append(s);
+    });
+    n.replaceWith(frag);
+  });
+  const words = h1.querySelectorAll(':scope > span');
+  gsap.set(words, { yPercent: 40, opacity: 0, filter: 'blur(8px)' });
+
+  const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  intro.to(words, { yPercent: 0, opacity: 1, filter: 'blur(0px)', duration: .8, stagger: .05 })
+       .to('#strike', { '--s': 1, duration: .5, ease: 'power2.inOut' }, '-=.2')
+       .from('.hero-in', { y: 24, opacity: 0, duration: .8, stagger: .1 }, 0.25)
+       .from('.vsl', { y: 60, opacity: 0, scale: .96, duration: 1 }, 0.6);
+
+  // Audit loop: scanline passes each row, flips errors to fixes, metrics improve
+  const rows = document.querySelectorAll('.scan-row'), state = document.getElementById('scanState');
+  const roas = { v: 1.9 }, cpp = { v: 529 };
+  const scan = gsap.timeline({ repeat: -1, repeatDelay: 2.4, delay: 1.4,
+    onRepeat: () => { pills.forEach(p => setPill(p, false)); state.textContent = 'Scanning…'; roas.v = 1.9; cpp.v = 529; } });
+  scan.set('#scanline', { y: -96, opacity: 1 })
+      .to('#scanline', { y: () => document.getElementById('scanRows').offsetHeight + 40, duration: 2.2, ease: 'none' });
+  rows.forEach((r, i) => scan.call(() => { setPill(pills[i], true); gsap.fromTo(r, { scale: .98 }, { scale: 1, duration: .4, ease: 'back.out(3)' }); }, null, 0.5 + i * 0.6));
+  scan.to('#scanline', { opacity: 0, duration: .3 })
+      .call(() => state.textContent = '0 errors')
+      .to(roas, { v: 4.8, duration: 1.2, ease: 'power2.out', onUpdate: () => document.getElementById('roas').textContent = roas.v.toFixed(2) }, '<')
+      .to(cpp, { v: 270, duration: 1.2, ease: 'power2.out', onUpdate: () => document.getElementById('cpp').textContent = Math.round(cpp.v) }, '<');
+  gsap.to('.float', { y: -10, duration: 2.4, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+
+  // VSL parallax
+  gsap.to('.vsl-img', { scale: 1.08, ease: 'none', scrollTrigger: { trigger: '.vsl', start: 'top bottom', end: 'bottom top', scrub: true } });
+
+  // Count-up stats
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const o = { v: 0 };
+    gsap.to(o, { v: +el.dataset.count, duration: 1.6, ease: 'power2.out', onUpdate: () => el.textContent = fmt(o.v, el),
+      scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+  });
+
+  // Generic reveals
+  gsap.utils.toArray('.reveal').forEach(el => gsap.from(el, { y: 30, opacity: 0, duration: .9, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } }));
+
+  // Timeline: line fills with scroll, cards slide in
+  gsap.to('#tlFill', { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '#timeline', start: 'top 70%', end: 'bottom 60%', scrub: true } });
+  gsap.utils.toArray('.tl').forEach(el => gsap.from(el, { x: 40, opacity: 0, duration: .8, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } }));
+
+  // Cards stagger in
+  [['.t-card', '#testimonials'], ['.m-card', '#team'], ['.cta-item', '#cta']].forEach(([sel, trig]) =>
+    gsap.from(sel, { y: 50, opacity: 0, duration: .9, stagger: .12, ease: 'power3.out', clearProps: 'transform', scrollTrigger: { trigger: trig, start: 'top 70%', once: true } }));
+
+  // CTA block grows in
+  gsap.from('#cta', { scale: .94, borderRadius: '4rem', ease: 'none', scrollTrigger: { trigger: '#cta', start: 'top bottom', end: 'top 55%', scrub: true } });
+}
+</script>
+</body>
+</html>
